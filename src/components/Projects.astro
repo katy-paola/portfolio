@@ -1,0 +1,40 @@
+---
+import Project from "../components/Project.astro";
+
+const tabs = ["Figma", "FrontEnd Dev", "Challenges"];
+const projects = [
+    {
+        img: "../../images/four-card.jpg",
+        title: "Four Card Feature Section Master Main",
+        tools: ["HTML", "SASS"],
+    },
+];
+---
+
+<main class="projects">
+    <h3 class="projects__title">Mis proyectos</h3>
+    <nav class="projects__nav">
+        <ul class="projects__list">
+            {
+                tabs.map((tab) => (
+                    <li class="projects__item">
+                        <a href="#" class="projects__link">
+                            {tab}
+                        </a>
+                    </li>
+                ))
+            }
+        </ul>
+    </nav>
+    <section class="projects__cards">
+        {
+            projects.map((project) => (
+                <Project
+                    img={project.img}
+                    title={project.title}
+                    tools={project.tools}
+                />
+            ))
+        }
+    </section>
+</main>
