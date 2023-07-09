@@ -1,0 +1,17 @@
+---
+export interface Props {
+    title: string;
+    date: string;
+    description: string;
+}
+
+const { title, date, description } = Astro.props;
+---
+
+<article class="experience__card">
+    <header class="experience__header">
+        <h3 class="experience__subtitle">{title}</h3>
+        <p class="experience__date">{date}</p>
+    </header>
+    <p class="experience__description">{description}</p>
+</article>

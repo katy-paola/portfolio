@@ -1,29 +1,13 @@
 ---
 import Chica from "./illustrations/Chica.astro";
 import Button from "./Button.astro";
-
-type Button = {
-    title: string;
-    color: "primary" | "secondary";
-};
-
-const buttons: Button[] = [
-    {
-        title: "Contactar",
-        color: "primary",
-    },
-    {
-        title: "Descargar hoja de vida",
-        color: "secondary",
-    },
-];
 ---
 
 <section class="me">
     <h1 class="me__name">
-        ¡Hola, mi nombre es <span class="gradient">Katy Barboza</span>!
+        ¡Hola, mi nombre es <span class="text-gradient">Katy Barboza</span>!
     </h1>
-    <h2 class="me__rol">UX/UI Designer - FrontEnd Web Developer</h2>
+    <p class="me__rol">UX/UI Designer - FrontEnd Web Developer</p>
     <Chica />
     <p class="me__description">
         Estudiante de Ingeniería de Sistemas con enfoque en desarrollo Frontend
@@ -31,10 +15,7 @@ const buttons: Button[] = [
         colaborativo y comprometida con la excelencia en el desarrollo web.
     </p>
     <div class="me__buttons">
-        {
-            buttons.map(({ title, color }) => (
-                <Button title={title} color={color} />
-            ))
-        }
+        <Button title="Contactar" color="primary" />
+        <Button title="Descargar hoja de vida" color="secondary" />
     </div>
 </section>

@@ -1,14 +1,5 @@
 ---
-import Button from "../components/Button.astro";
-
-const buttons = [
-    {
-        title: "Ver Proyecto",
-    },
-    {
-        title: "Ver en GitHub",
-    },
-];
+import Link from "./Link.astro";
 
 export interface Props {
     img: string;
@@ -21,13 +12,14 @@ const { img, title, tools } = Astro.props;
 
 <article class="projects__card">
     <figure class="projects__figure">
-        <img src="/images/four-card.jpg" alt="" class="projects__img" />
+        <img src={img} alt="" class="projects__img" />
     </figure>
-    <h4 class="projects__subtitle"></h4>
+    <h3 class="projects__subtitle">{title}</h3>
     <ul class="projects__tools">
         {tools.map((tool) => <li class="projects__tool">{tool}</li>)}
     </ul>
     <div class="projects__buttons">
-        {buttons.map((button) => <Button title={button.title} />)}
+        <Link title="Ver Proyecto" color="primary" />
+        <Link title="Ver en GitHub" color="secondary" />
     </div>
 </article>

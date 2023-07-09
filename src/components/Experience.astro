@@ -1,0 +1,19 @@
+---
+import CardExperience from "./CardExperience.astro";
+
+const cardsExperience = [
+    {
+        title: "JS Conf Colombia",
+        date: "Junio 2023 - Actualidad",
+        description:
+            "Voluntariado web para el desarrollo de landing page del evento JS Conf Colombia 2023.",
+    },
+];
+---
+
+<section class="experience">
+    <h2 class="experience__title">Mi experiencia</h2>
+    <section class="experience__cards">
+        {cardsExperience.map((card) => <CardExperience {...card} />)}
+    </section>
+</section>

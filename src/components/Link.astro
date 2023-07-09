@@ -1,0 +1,12 @@
+---
+export interface Props {
+    title: string;
+    color?: "primary" | "secondary";
+}
+
+const { title, color = "primary" } = Astro.props;
+---
+
+<a href="#" class=`button button--color-${color}`>
+    {title}
+</a>

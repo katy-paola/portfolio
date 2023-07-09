@@ -1,11 +1,19 @@
 :root {
-  --colors-primary: #cc83ff;
-  --colors-secondary: #ff8f82;
-  --accent: 124, 58, 237;
-  --accent-gradient: linear-gradient(
-    45deg,
-    rgb(var(--accent)),
-    #da62c4 30%,
-    white 60%
-  );
+  --color-primary: #cc83ff;
+  --button-primary-hover:#BA68F2;
+  --color-secondary: #ff8f82;
+  --button-secondary-hover: #FC7E6F;
+  --color-title: #5F5D5D;
+  --color-paragraph: #817F7F;
+  --bg-container: #F8EAFF;
+  --bg-cards: #FFF3E9;
+  --bg-primary-section: #E0B0FF;
+  --bg-secondary-section: #FFBBA8;
+  --shadow-cards: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+.text-gradient {
+  background: linear-gradient(45deg, var(--color-primary), var(--color-secondary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

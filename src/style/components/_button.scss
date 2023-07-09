@@ -11,7 +11,7 @@
 
 .button--color-primary {
   color: #fff;
-  background-color: var(--colors-primary);
+  background-color: var(--color-primary);
 
   &:hover {
     background-color: #ba68f2;
@@ -20,18 +20,9 @@
 
 .button--color-secondary {
   color: #fff;
-  background-color: var(--colors-secondary);
+  background-color: var(--color-secondary);
 
   &:hover {
     background-color: #fc7e6f;
-  }
-}
-
-.button--color-tertiary {
-  color: #fff;
-  background-color: #ffca28;
-
-  &:hover {
-    background-color: #ffbe0b;
   }
 }
