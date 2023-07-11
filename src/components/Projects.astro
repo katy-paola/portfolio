@@ -1,14 +1,10 @@
 ---
 import Project from "../components/Project.astro";
+import json from "../data/projects.json";
+
+const projects = json;
 
 const tabs = ["Figma", "FrontEnd Dev", "Challenges"];
-const projects = [
-    {
-        img: "../../images/four-card.jpg",
-        title: "Four Card Feature Section Master Main",
-        tools: ["HTML", "SASS"],
-    },
-];
 ---
 
 <main class="projects">
@@ -26,15 +22,17 @@ const projects = [
             }
         </ul>
     </nav>
-    <section class="projects__cards">
-        {
-            projects.map((project) => (
-                <Project
-                    img={project.img}
-                    title={project.title}
-                    tools={project.tools}
-                />
-            ))
-        }
-    </section>
+    <div class="scroll">
+        <section class="projects__cards">
+            {
+                projects.map((project) => (
+                    <Project
+                        img={project.img}
+                        title={project.title}
+                        tools={project.tools}
+                    />
+                ))
+            }
+        </section>
+    </div>
 </main>

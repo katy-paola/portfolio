@@ -22,6 +22,12 @@ footer {
 .footer {
   background-color: var(--bg-container);
 }
+.projects,
+.experience,
+.footer {
+  padding: 3.2rem 1.6rem;
+  gap: 1.6rem;
+}
 ul {
   list-style: none;
 }
@@ -50,4 +56,10 @@ h3,
 .experience__date {
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-medium);
+}
+h2 {
+  font-size: var(--font-size-lg);
+}
+h3 {
+  font-size: var(--font-size-md);
 }

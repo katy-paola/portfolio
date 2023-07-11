@@ -14,12 +14,14 @@ const { img, title, tools } = Astro.props;
     <figure class="projects__figure">
         <img src={img} alt="" class="projects__img" />
     </figure>
-    <h3 class="projects__subtitle">{title}</h3>
-    <ul class="projects__tools">
-        {tools.map((tool) => <li class="projects__tool">{tool}</li>)}
-    </ul>
-    <div class="projects__buttons">
-        <Link title="Ver Proyecto" color="primary" />
-        <Link title="Ver en GitHub" color="secondary" />
+    <div class="projects__content">
+        <h3 class="projects__subtitle">{title}</h3>
+        <ul class="projects__tools">
+            {tools.map((tool) => <li class="projects__tool">{tool}</li>)}
+        </ul>
+        <div class="projects__buttons">
+            <Link title="Ver Proyecto" color="primary" />
+            <Link title="Ver en GitHub" color="secondary" />
+        </div>
     </div>
 </article>
