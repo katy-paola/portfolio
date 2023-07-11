@@ -7,15 +7,47 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--poppins);
+  font-size: 1.6rem;
 }
-header, main, section, footer{
+header,
+main,
+section,
+footer {
   display: flex;
   flex-direction: column;
+}
+.header,
+.presentation,
+.footer {
+  background-color: var(--bg-container);
 }
 ul {
   list-style: none;
 }
 a {
   text-decoration: none;
+}
+h1,
+h2,
+h3,
+p,
+a {
+  line-height: 1.5;
+}
+h1,
+h2,
+h3 {
+  color: var(--color-title);
+}
+h1,
+h2,
+h3,
+.button {
+  font-weight: var(--font-weight-semibold);
+}
+.presentation__rol,
+.experience__date {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
 }

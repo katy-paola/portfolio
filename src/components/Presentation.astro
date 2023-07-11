@@ -3,18 +3,29 @@ import Chica from "./illustrations/Chica.astro";
 import Button from "./Button.astro";
 ---
 
-<section class="me">
-    <h1 class="me__name">
-        ¡Hola, mi nombre es <span class="text-gradient">Katy Barboza</span>!
-    </h1>
-    <p class="me__rol">UX/UI Designer - FrontEnd Web Developer</p>
-    <Chica />
-    <p class="me__description">
-        Estudiante de Ingeniería de Sistemas con enfoque en desarrollo Frontend
-        y habilidades en UX/UI design. Apasionada por el aprendizaje y trabajo
-        colaborativo y comprometida con la excelencia en el desarrollo web.
-    </p>
-    <div class="me__buttons">
+<section class="presentation">
+    <section class="presentation__text">
+        <div class="presentation__me">
+            <h1 class="presentation__name">
+                ¡Hola, mi nombre es <span class="text-gradient"
+                    >Katy Barboza</span
+                >!
+            </h1>
+            <p class="presentation__rol">
+                UX/UI Designer - FrontEnd Web Developer
+            </p>
+        </div>
+        <figure class="presentation__figure">
+            <Chica class="illustration" />
+        </figure>
+        <p class="presentation__description">
+            Estudiante de Ingeniería de Sistemas con enfoque en desarrollo
+            Frontend y habilidades en UX/UI design. Apasionada por el
+            aprendizaje y trabajo colaborativo y comprometida con la excelencia
+            en el desarrollo web.
+        </p>
+    </section>
+    <div class="presentation__buttons">
         <Button title="Contactar" color="primary" />
         <Button title="Descargar hoja de vida" color="secondary" />
     </div>

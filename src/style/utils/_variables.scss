@@ -1,18 +1,47 @@
 :root {
+  //font size
+  --font-size-base: 62.5%;
+  --font-size-sm: 1.2rem;
+  --font-size-md: 1.4rem;
+  --font-size-lg: 1.6rem;
+  --font-size-xl: 2rem;
+
+  //font weight
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+
+  //font family
+  --poppins: "Poppins", sans-serif;
+
+  //bg colors
   --color-primary: #cc83ff;
-  --button-primary-hover:#BA68F2;
+  --button-primary-hover: #ba68f2;
   --color-secondary: #ff8f82;
-  --button-secondary-hover: #FC7E6F;
-  --color-title: #5F5D5D;
-  --color-paragraph: #817F7F;
-  --bg-container: #F8EAFF;
-  --bg-cards: #FFF3E9;
-  --bg-primary-section: #E0B0FF;
-  --bg-secondary-section: #FFBBA8;
+  --button-secondary-hover: #fc7e6f;
+  --bg-container: #f8eaff;
+  --bg-cards: #fff3e9;
+  --bg-primary-section: #e0b0ff;
+  --bg-secondary-section: #ffbba8;
+
+  //text colors
+  --color-title: #5f5d5d;
+  --color-paragraph: #817f7f;
+
+  //neutral colors
+  --white: #fff;
+  --black: #000;
+
+  //shadow
   --shadow-cards: 0px 2px 4px rgba(0, 0, 0, 0.25);
+
+  font-size: var(--font-size-base);
 }
 .text-gradient {
-  background: linear-gradient(45deg, var(--color-primary), var(--color-secondary));
+  background: linear-gradient(
+    45deg,
+    var(--color-primary),
+    var(--color-secondary)
+  );
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;

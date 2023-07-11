@@ -1,0 +1,36 @@
+.presentation {
+  gap: 1.6rem;
+  padding: 0.8rem 1.6rem 3.3rem;
+
+  .presentation__text {
+    align-items: center;
+    gap: 0.8rem;
+
+    .presentation__me {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+
+      .presentation__name {
+        font-size: var(--font-size-xl);
+      }
+    }
+
+    p {
+      color: var(--color-paragraph);
+    }
+
+    .presentation__figure {
+      display: flex;
+      place-content: center;
+      width: 100%;
+      padding: 0.8rem;
+    }
+
+    .presentation__description {
+      font-size: var(--font-size-md);
+      font-weight: var(--font-weight-medium);
+      padding: 0 0.8rem;
+    }
+  }
+}
