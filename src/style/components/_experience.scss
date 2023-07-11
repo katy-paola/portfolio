@@ -1,0 +1,28 @@
+.experience {
+  background-color: var(--bg-secondary-section);
+
+  .experience__cards {
+    gap: 1.6rem;
+    padding: 0.8rem;
+
+    .experience__card {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+      padding: 0.8rem;
+      border-radius: 0.8rem;
+      background-color: var(--bg-cards);
+      box-shadow: var(--shadow-cards);
+
+      .experience__date {
+        color: var(--color-paragraph);
+      }
+
+      .experience__description {
+        font-size: var(--font-size-md);
+        font-weight: var(--font-weight-medium);
+        color: var(--color-paragraph);
+      }
+    }
+  }
+}
